@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Burger Surver</title>
+  </head>
+  <body>
+    <h1 id="title">Burger Survey</h1>
+    <p id="description">A Burger survey form</p>
+    <form id="survey-form" method="post">
+      <div>
+        <label for="name-input">Name</label>
+        <input
+          type="text"
+          id="name-input"
+          name="name-input"
+          placeholder="Enter your name"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div>
+        <label id="email-label" for="email-input">Email</label>
+        <input
+          type="email"
+          id="email-input"
+          name="email-input"
+          placeholder="Enter your email"
+          autocomplete="off"
+          required
+        />
+      </div>
+      <div>
+        <label id="age-label" for="age-input">
+          Age
+          <span>(optional)</span>
+        </label>
+        <input
+          type="number"
+          id="age-input"
+          name="age-input"
+          placeholder="13-120 years old"
+          min="13"
+          max="120"
+        />
+      </div>
+      <div>
+        <label id="fav-burger-label" for="dropdown">
+          Which burger do you like the most?
+        </label>
+        <select id="dropdown">
+          <option value="1">None</option>
+          <option vallue="2">Cheddar-and-Onion Smashed Burgers</option>
+          <option value="3">Cheeseburger</option>
+          <option value="4">Bacon-and-Kimchi Burgers</option>
+          <option value="5">Nacho Burger</option>
+          <option value="6">Chicken Burger</option>
+        </select>
+      </div>
+      <div>
+        <label id="recommend-label">
+          Would you recommend someone to eat our burgers?
+        </label>
+        <label class="radio-control" id="definitely-label" for="1-radio-btn">
+          <input
+            type="radio"
+            id="1-radio-btn"
+            name="recommend-to"
+            value="definitely"
+            required
+          />
+          Definitely
+        </label>
+        <label class="radio-control" id="maybe-label" for="2-radio-btn">
+          <input
+            type="radio"
+            id="2-radio-btn"
+            name="recommend-to"
+            value="maybe"
+            required
+          />
+          Maybe
+        </label>
+        <label class="radio-control" id="not-sure-label" for="3-radio-btn">
+          <input
+            type="radio"
+            id="3-radio-btn"
+            name="recommend-to"
+            value="not-sure"
+            required
+          />
+          Not Sure
+        </label>
+      </div>
+      <div>
+        <label id="burger-eat-label" for="how-often">
+          How many times in a week do you go to burger fast food chain?
+        </label>
+        <select id="how-often">
+          <option value="1">Never</option>
+          <option value="2">Occasionally</option>
+          <option value="3">one time a week</option>
+          <option value="4">Two times a week</option>
+          <option value="5">Three times a week</option>
+          <option value="6">Four times a week</option>
+          <option value="7">Five times a week</option>
+          <option value="8">Six times a week</option>
+          <option value="9">Whole week</option>
+        </select>
+      </div>
+      <div>
+        <label id="burger-to-add-label">
+          Which burger/s would you like us to add?
+        </label>
+        <label
+          class="checkbox-control"
+          id="ultimate-veggie-burgers-label"
+          for="ultimate-veggie-burgers"
+        >
+          <input
+            type="checkbox"
+            id="ultimate-veggie-burgers"
+            value="Ultimate Veggie Burgers"
+            required
+          />
+          Ultimate Veggie Burgers
+        </label>
+        <label
+          class="checkbox-control"
+          id="shrimp-burgers-label"
+          for="shrimp-burgers"
+        >
+          <input
+            type="checkbox"
+            id="shrimp-burgers"
+            value="Shrimp Burgers"
+            required
+          />
+          Shrimp Burgers
+        </label>
+        <label
+          class="checkbox-control"
+          id="japanese-style-chili-burgers-w-mayo-label"
+          for="japanese-style-chili-burger-w-mayo"
+        >
+          <input
+            type="checkbox"
+            id="japanese-style-chili-burgesr-w-mayo"
+            value="Japanese-Style Chili Burgers with Yuzu Mayo"
+            required
+          />
+          Japanese-Style Chili Burgers with Yuzu Mayo
+        </label>
+        <label
+          class="checkbox-control"
+          id="bacon-and-kimchi-burgers-label"
+          for="bacon-and-kimchi-burgers"
+        >
+          <input
+            type="checkbox"
+            id="bacon-and-kimchi-burgers"
+            value="Bacon-and-Kimchi Burgers"
+            required
+          />
+          Bacon and Kimchi Burgers
+        </label>
+      </div>
+      <div>
+        <label id="suggestions-concerns-label" for="suggestions-concerns">
+          Do you have any suggestions/concerns?
+          <span>(optional)</span>
+        </label>
+        <textarea
+          id="suggestions-concerns"
+          placeholder="Place your suggestions/concerns here."
+          rows="5"
+        ></textarea>
+      </div>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
